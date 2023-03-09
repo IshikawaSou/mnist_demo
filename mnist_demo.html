@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="weights.js"></script>
+<script src="minist.js"></script>
+<script src="optim.js"></script>
+</head>
+
+<body onload="minist_setup('canvas', 'result'); optim_setup('sliders1', 'sliders2');">
+
+<div style="display: flex; align-items: center; justify-content: center;">
+<canvas id="canvas" width="420" height="504"></canvas>
+<span style="width: 2em;">&nbsp;</span>
+Answer: <input id="result" size="2" disabled="true">
+&nbsp;
+<button onclick="minist_clear();">Clear</button>
+</div>
+
+</body>
+</html>
